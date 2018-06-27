@@ -21,6 +21,14 @@ public class Log {
 
     public Log() { }
 
+    public Log(LocalDateTime date, String ip, String request, String status, String userAgent) {
+        this.date = date;
+        this.ip = ip;
+        this.request = request;
+        this.status = status;
+        this.userAgent = userAgent;
+    }
+
     public int getId() {
         return id;
     }
